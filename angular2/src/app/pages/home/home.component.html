@@ -1,0 +1,26 @@
+<form>
+ <mat-form-field>
+   <input name='valor1' id='valor1' matInput placeholder="Ingresa tu valor"
+   [(ngModel)]="valor1"
+   /> 
+ </mat-form-field>
+ <mat-form-field>
+    <input name='valor2' id='valor2' matInput placeholder="Ingresa tu valor"
+    [(ngModel)]="valor2"
+    /> 
+  </mat-form-field>
+<br/>
+<h1>{{valor1 +" "+ valor2}}</h1>
+<span>{{valor1}}</span>
+<br/>
+<span>{{valor2}}</span>
+<br/>
+<button (click)="sumar()">Sumar</button>
+
+<button (click)="restar()">Restar</button>
+
+<button (click)="multiplicar()">Multiplicar</button>
+
+<button (click)="dividir()">Dividir</button>
+<h1>{{resultado}}</h1>
+</form>
